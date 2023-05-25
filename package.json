@@ -3,7 +3,7 @@
   "description": "A TypeScript starter for Gatsby that includes all you need to build amazing projects",
   "version": "1.0.0",
   "private": true,
-  "author": "João Pedro Schmitz <hey@joaopedro.dev> (https://joaopedro.dev)",
+  "author": "Francies Fernandes",
   "license": "MIT",
   "keywords": [
     "gatsby",
@@ -36,6 +36,7 @@
     "gatsby": "5.9.0",
     "gatsby-plugin-gatsby-cloud": "5.10.0",
     "gatsby-plugin-image": "3.10.0",
+    "gatsby-plugin-manifest": "5.10.0",
     "gatsby-plugin-pnpm": "1.2.10",
     "gatsby-plugin-postcss": "6.10.0",
     "gatsby-plugin-sharp": "5.10.0",

@@ -8,7 +8,12 @@ const config: GatsbyConfig = {
   },
   plugins: [
     `gatsby-plugin-gatsby-cloud`,
-    `gatsby-plugin-postcss`,
+    `gatsby-plugin-postcss`, {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        "icon": "static/images/icon.png"
+      }
+    },
     {
       resolve: `gatsby-source-contentful`,
       options: {
