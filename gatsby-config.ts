@@ -7,6 +7,7 @@ const config: GatsbyConfig = {
     title: `My Gatsby App`,
   },
   plugins: [
+    `gatsby-plugin-pnpm`,
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-postcss`, {
       resolve: 'gatsby-plugin-manifest',
