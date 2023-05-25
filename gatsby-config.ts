@@ -8,6 +8,12 @@ const config: GatsbyConfig = {
   },
   plugins: [
     `gatsby-plugin-pnpm`,
+    {
+      resolve: `gatsby-plugin-minify`,
+      options: {
+        // ...
+      }
+    },
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-postcss`, {
       resolve: 'gatsby-plugin-manifest',
