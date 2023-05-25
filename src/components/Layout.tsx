@@ -23,7 +23,7 @@ export default function Layout({ children }: LayoutProps) {
     };
   } = useStaticQuery(graphql`
     query {
-      allContentfulNavBar {
+      allContentfulNavBar(sort: {createdAt: ASC})  {
         nodes {
           name
           slug
@@ -47,7 +47,7 @@ export default function Layout({ children }: LayoutProps) {
 
                     })} */}
           <ul className="flex items-center font-semibold space-x-[92px] mr-32">
-            {allContentfulNavBar.nodes.reverse().map(
+            {allContentfulNavBar.nodes.map(
               (
                 {
                   name,
