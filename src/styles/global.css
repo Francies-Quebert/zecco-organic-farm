@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'KronaOne';
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+    font-named-instance: 'Regular';
+    src: url(/fonts/KronaOne-Regular.ttf) format("woff2");
+}
+
+@font-face {
+    font-family: 'Interstate';
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+    font-named-instance: 'Regular';
+    src: url(/fonts/Interstate-Regular-Font.ttf) format("woff2");
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+    font-named-instance: 'Regular';
+    src: url(/fonts/Gilroy-ExtraBold.otf) format("woff2");
+}
+
+@font-face {
+    font-family: 'Gilroy light';
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+    font-named-instance: 'Regular';
+    src: url(/fonts/Gilroy-Light.otf) format("woff2");
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+    font-named-instance: 'Regular';
+    src: url(/fonts/Raleway.ttf) format("woff2");
+}
+
+
+
+@layer base {
+    :root {
+        font-family: 'Interstate';
+        font-size: 16px;
+        color: #1D1D1D;
+    }
+
+    ul li:hover>.arrow {
+        transform: rotate(-225deg);
+    }
+
+
+    .card-recipe::after {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-right-radius: 0;
+        background: #FF947B;
+        bottom: 22px;
+        right: 48px;
+        z-index: 1;
+    }
+}
+
+
+@layer components {
+    .arrow {
+        @apply w-2 h-2 inline-block align-middle border-l border-b border-accent ml-2 mt-[-0.25em] transition-transform delay-75 ease-in-out rotate-[315deg];
+    }
+
+    .menu-btn {
+        @apply cursor-pointer relative h-full flex items-center;
+    }
+
+    .primary-btn {
+        @apply bg-primary text-accent min-w-[150px] py-4;
+    }
+
+    .section-title {
+        @apply font-Gilroy-light text-[44px];
+    }
+
+}
+
+@layer utilities {}

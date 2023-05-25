@@ -1,14 +1,24 @@
-import Title from '@/components/Title';
+import AnimatedSection from '@/components/AnimatedSection';
+import SectionCarousel from '@/components/SectionCarousel';
+import SectionLanding from '@/components/SectionLanding';
 
 export default function Home() {
+
+
+
   return (
-    <main>
-      <Title>Hello TypeScript!</Title>
-      <p>A TypeScript starter for Gatsby. Great for advanced users.</p>
-      <p>
-        Follow me on Twitter (
-        <a href="https://twitter.com/jpedroschmitz">@jpedroschmitz</a>)
-      </p>
+    <main className='z-0'>
+      {/* Section 1 */}
+      <SectionLanding />
+
+      {/* Section 2 */}
+
+      <AnimatedSection />
+
+
+      {/* Section 3 */}
+      <SectionCarousel />
+
     </main>
   );
 }
