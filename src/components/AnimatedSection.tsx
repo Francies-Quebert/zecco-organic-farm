@@ -1,3 +1,4 @@
+import React from 'react';
 import { useIntersectionObserver } from '@react-hooks-library/core';
 import { StaticImage } from 'gatsby-plugin-image';
 import { useRef } from 'react';

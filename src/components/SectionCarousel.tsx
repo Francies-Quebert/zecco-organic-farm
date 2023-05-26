@@ -1,3 +1,4 @@
+import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import SectionTitle from './SectionTitle';
 import { Swiper, SwiperSlide, useSwiper, SwiperClass } from 'swiper/react';
@@ -60,7 +61,7 @@ function SectionCarousel() {
     };
   } = useStaticQuery(graphql`
     query {
-      allContentfulLatestRecipes {
+      allContentfulLatestRecipes(sort: {createdAt: ASC}) {
         nodes {
           name
           price

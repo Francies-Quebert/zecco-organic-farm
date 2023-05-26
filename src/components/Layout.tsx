@@ -43,9 +43,6 @@ export default function Layout({ children }: LayoutProps) {
           <Logo />
         </div>
         <div className="flex w-[60%] h-full">
-          {/* {allContentfulNavBar.nodes.map(({ name.childrenContentfulNavBarContentfulchildrenJsonNode }:INavBar)=>{
-
-                    })} */}
           <ul className="flex items-center font-semibold space-x-[92px] mr-32">
             {allContentfulNavBar.nodes.map(
               (
@@ -67,7 +64,7 @@ export default function Layout({ children }: LayoutProps) {
                           childrenContentfulNavBarContentfulchildrenJsonNode.map(
                             ({ name }, i) => (
                               <li className="h-8" key={i}>
-                                <Link to={`#`}>{name}</Link>
+                                <Link to={`/`}>{name}</Link>
                               </li>
                             ),
                           )}
@@ -77,11 +74,11 @@ export default function Layout({ children }: LayoutProps) {
                 } else {
                   return (
                     <li className="menu-btn" key={index}>
-                      <Link to={`#`}>{name}</Link>
+                      <Link to={`/`}>{name}</Link>
                     </li>
                   );
                 }
-              },
+              }
             )}
             {/* <li className='group  menu-btn'>
                             Recipe box <span className="arrow"></span>

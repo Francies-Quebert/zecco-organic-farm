@@ -1,3 +1,4 @@
+import React from 'react';
 import AnimatedSection from '@/components/AnimatedSection';
 import SectionCarousel from '@/components/SectionCarousel';
 import SectionLanding from '@/components/SectionLanding';
